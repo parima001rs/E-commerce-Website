@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Gadgets</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" width = "125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Account</a></li>
+                    <!-- <li><a href=""><i class="fab fa-opencart"></i></a></li>
+                    <li class="menu-icon" onclick="menutoggle()"><a href=""><i class="fas fa-bars"></i></a></li> -->
+                </ul>
+            </nav>
+            <li style="list-style: none;"><a href=""><i class="fab fa-opencart"></i></a></li>
+            <li style="list-style: none;" class="menu-icon" onclick="menutoggle()"><a href=""><i class="fas fa-bars"></i></a></li>
+        </div>
+    </div>
+</div>
+
+<!-- ----------- ACCOUNT PAGE ----------- -->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="controller.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot password</a>
+                    </form>
+
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+   <!-------- FOOTER --------->
+   <div class="footer">
+       <div class="container">
+           <div class="row">
+               <div class="footer-col-1">
+                   <h3>Download Our App</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur.</p>
+                   <div class="app-logo">
+                    <img src="">
+                    <img src="">
+                </div>
+               </div>
+               <div class="footer-col-2">
+                <img src="logo.png" width="170px">
+                <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+              <!-- <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+             </div>
+             <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+             </div> -->
+             <div class="footer-col-3">
+                <div class="txt">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+                </div>
+                <div class="txt">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                 </div>
+            </div>
+       </div>
+       <hr>
+       <p class="copyright">Copyright &#169 2020 - PK</p>
+   </div>
+
+<!-- ---------------JS------------- -->
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+var RegForm = document.getElementById("RegForm");
+var Indicator = document.getElementById("Indicator");
+
+function register(){
+    RegForm.style.transform = "translateX(0px)";
+    LoginForm.style.transform = "translateX(0px)";
+    Indicator.style.transform = "translateX(100px)";
+}
+
+function login(){
+    RegForm.style.transform = "translateX(300px)";
+    LoginForm.style.transform = "translateX(300px)";
+    Indicator.style.transform = "translateX(0px)";
+}
+</script>
+
+
+<!-- <script src="main.js"></script> -->
+</body>
+</html>
