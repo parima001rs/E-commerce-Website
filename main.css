@@ -89,9 +89,7 @@ p{
     min-width: 250px;
     margin-bottom: 30px;
 }
-/* .col-3 img{
-    width: 100% ;
-} */
+
 .small-container{
     max-width: 1080px;
     margin: auto;
@@ -348,6 +346,59 @@ input:focus{
     cursor: pointer;
 }
 
+/* --------- CART ITEMS --------- */
+
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: azure;
+    background: #bd2410;
+    font-weight: normal;
+}
+td{
+    padding: 10px 50px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #bd2410;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #bd2410;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
 /* -----------ACCOUNT PAGE------------ */
 .account-page{
     padding: 50px 0;
@@ -467,5 +518,8 @@ form a{
     .single-product h1{
         font-size: 26px;
         line-height: 32px;
+    }
+    .cart-info p{
+        display: none;
     }
 }

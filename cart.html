@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Gadgets</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,800;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" width = "125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="All Products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <li style="list-style: none;"><a href="cart.html"><i class="fab fa-opencart"></i></a></li>
+            <li style="list-style: none;" class="menu-icon" onclick="menutoggle()"><a href=""><i class="fas fa-bars"></i></a></li>
+        </div>
+    </div>
+</div>
+<!---------- CART ITEM DETAILS----------->
+<div class="small-container cart-page">
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="P2.png">
+                    <div>
+                        <p style="color: black;"></p>Acer Nitro Gaming Mouse</p>
+                        <small>Price: $30.00</small>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$30.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="P3.png">
+                    <div>
+                        <p style="color: black;"></p>Gaming Keyboard</p>
+                        <small>Price: $40.00</small>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$40.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="P1.png">
+                    <div>
+                        <p style="color: black;"></p>Boat Portable Speaker</p>
+                        <small>Price: $17.50</small>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$17.50</td>
+        </tr>
+    </table>
+
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$87.50</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$12.00</td>
+            </tr>
+            <tr>
+                <td>Subtotal</td>
+                <td>$100.00</td>
+            </tr>
+        </table>
+    </div>
+
+</div>
+
+<!-------- FOOTER --------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <div class="app-logo">
+                 <img src="App1.png">
+                 <img src="App2.png">
+             </div>
+            </div>
+            <div class="footer-col-2">
+             <img src="logo.png" width="170px">
+             <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet consectetur.</p>
+           </div>
+          <div class="footer-col-3">
+             <div class="txt">
+             <h3>Useful Links</h3>
+             <ul>
+                 <li>Coupons</li>
+                 <li>Blog Post</li>
+                 <li>Return Policy</li>
+                 <li>Join Affiliate</li>
+             </ul>
+             </div>
+             <div class="txt">
+                 <h3>Follow us</h3>
+                 <ul>
+                     <li>Facebook</li>
+                     <li>Twitter</li>
+                     <li>Instagram</li>
+                     <li>Youtube</li>
+                 </ul>
+              </div>
+         </div>
+    </div>
+    <hr>
+    <p class="copyright">Copyright &#169 2020 - PK</p>
+ </div>
+
+<script src="main.js"></script>
+</body>
+</html>
